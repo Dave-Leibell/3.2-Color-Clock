@@ -1,2 +1,60 @@
+$grid-columns: 2;
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
+
+.stopwatch{
+  @include outer-container (50%);
+}
+.timertext{
+  display: inline;
+  margin: auto;
+  margin-left: 46%;
+}
+.space{
+  height: 200px;
+  width: 50%;
+}
+.buttons{
+  margin: auto;
+}
+.hours{
+  font-family: helvetica;
+  font-weight: lighter;
+  font-size: 2em;
+}
+.minutes{
+  font-family: helvetica;
+  font-weight: lighter;
+  font-size: 2em;
+}
+.seconds{
+  font-family: helvetica;
+  font-weight: lighter;
+  font-size: 2em;
+}
+.start{
+  font-family: helvetica;
+  font-size: 1em;
+  color: black;
+  text-align: center;
+  background: green;
+  outline: none;
+  margin-left: 50%;
+  margin-right: 10px;
+  margin-top: 10px;
+  height: 45px;
+  width: 65px;
+}
+.clear{
+  @include outer-container (50%);
+  font-family: helvetica;
+  font-size: 1em;
+  color: black;
+  text-align: center;
+  background: red;
+  outline: none;
+  margin-right: 10px;
+  margin-top: 15px;
+  height: 45px;
+  width: 65px;
+}
